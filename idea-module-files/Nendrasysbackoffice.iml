@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module descriptorType="CUSTOM" importedAsReadOnly="false" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="Nendrasysbackofficespring" name="Nendrasysbackofficespring" removed="false">
+          <dependency>backofficespring==backoffice</dependency>
+          <dependency>Nendrasyscorespring==Nendrasyscore</dependency>
+          <dependency>acceleratorbackofficespring==acceleratorbackoffice</dependency>
+          <file>file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/project.properties</file>
+          <file>file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/resources/Nendrasysbackoffice-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://download.hybris.com/api/2005/commercesuite" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice">
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/web/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/web/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/web/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/web/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/commonweb/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/commonweb/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/commonweb/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/commonweb/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/acceleratoraddon/web/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/acceleratoraddon/web/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/acceleratoraddon/web/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/acceleratoraddon/web/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/backoffice/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/backoffice/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/backoffice/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/backoffice/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/acceleratoraddon/web/addonsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/acceleratoraddon/web/commonwebsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/acceleratoraddon/web/testclasses" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/backoffice/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/commonweb/addonsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/commonweb/commonwebsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/commonweb/testclasses" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/testclasses" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/web/addonsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/web/commonwebsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/web/testclasses" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/web/webroot/WEB-INF/classes" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysbackoffice/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../hybris/bin/modules/backoffice-framework/backoffice/web/webroot/WEB-INF/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../hybris/bin/modules/backoffice-framework/backoffice/web/webroot/WEB-INF/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../hybris/bin/modules/backoffice-framework/backoffice/web/webroot/WEB-INF/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="backoffice" exported="" />
+    <orderEntry type="module" module-name="Nendrasyscore" exported="" />
+    <orderEntry type="module" module-name="acceleratorbackoffice" exported="" />
+  </component>
+</module>

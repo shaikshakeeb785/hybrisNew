@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module descriptorType="CUSTOM" importedAsReadOnly="false" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="Nendrasystestspring" name="Nendrasystestspring" removed="false">
+          <dependency>electronicsstorespring==electronicsstore</dependency>
+          <dependency>Nendrasysfacadesspring==Nendrasysfacades</dependency>
+          <dependency>apparelstorespring==apparelstore</dependency>
+          <file>file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/project.properties</file>
+          <file>file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/resources/Nendrasystest-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://download.hybris.com/api/2005/commercesuite" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest">
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/web/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/web/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/web/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/web/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/commonweb/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/commonweb/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/commonweb/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/commonweb/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/acceleratoraddon/web/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/acceleratoraddon/web/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/acceleratoraddon/web/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/acceleratoraddon/web/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/backoffice/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/backoffice/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/backoffice/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/backoffice/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/acceleratoraddon/web/addonsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/acceleratoraddon/web/commonwebsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/acceleratoraddon/web/testclasses" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/backoffice/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/commonweb/addonsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/commonweb/commonwebsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/commonweb/testclasses" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/testclasses" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/web/addonsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/web/commonwebsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/web/testclasses" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/web/webroot/WEB-INF/classes" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasystest/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="electronicsstore" exported="" />
+    <orderEntry type="module" module-name="Nendrasysfacades" exported="" />
+    <orderEntry type="module" module-name="apparelstore" exported="" />
+  </component>
+</module>

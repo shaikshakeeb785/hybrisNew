@@ -1,0 +1,75 @@
+#* @vtlvariable name="model" type="de.hybris.platform.core.model.ItemModel" *#
+#* @vtlvariable name="class" type="java.lang.String" *#
+
+
+<svg xmlns="http://www.w3.org/2000/svg" overflow="hidden" viewBox="0 0 200 100" width="200" height="100">
+	<style type="text/css">
+
+		.action-end-outer {
+			fill: #0486e0;
+		}
+
+		.action-end-middle {
+			fill: #fff;
+		}
+
+		.action-end-inner {
+			fill: #0486e0;
+		}
+
+		.action-end-text {
+			fill: #ffffff;
+		}
+
+		.action-end-middle.selected {
+			fill: #D4E5FF;
+		}
+
+		.action-end-outer.terminated {
+			fill: #000;
+		}
+
+		.action-end-inner.terminated {
+			fill: #000;
+		}
+
+		.action-end-text.terminated {
+			fill: #ff3b30;
+		}
+
+		.action-end-outer.completed {
+			fill: #000;
+		}
+
+		.action-end-inner.completed {
+			fill: #000;
+		}
+
+		.action-end-text.completed {
+			fill: #5eb300;
+		}
+
+		.action-end-middle.in-progress {
+			fill: #0486E0;
+		}
+
+	</style>
+	<g>
+		<rect class="action-end-outer $class" x="0" y="0" width="200" height="100" ry="50%"/>
+		<rect class="action-end-middle $class"  x="4" y="4" width="192" height="92" ry="50%"/>
+		<rect class="action-end-inner $class" x="17.5" y="14" width="165" height="72" ry="50%"/>
+
+		<svg width="165" x="17.5">
+			<text class="action-end-text $class"
+				  font-family="Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="24pt"
+				  text-anchor="middle" x="50%" y="50%" dy="6pt">
+                #if (!$model.getName() || "$model.getName()" == "")
+					<tspan>[$model.getCode()]</tspan>
+                #else
+					<tspan>$model.getName()</tspan>
+                #end
+			</text>
+		</svg>
+
+	</g>
+</svg>

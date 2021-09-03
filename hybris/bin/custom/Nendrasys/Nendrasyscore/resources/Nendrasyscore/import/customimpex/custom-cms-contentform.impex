@@ -1,0 +1,83 @@
+$contentCatalog=electronicsContentCatalog
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+
+
+
+INSERT_UPDATE PageTemplate;$contentCV[unique=true];uid[unique=true];name;frontendTemplateName;restrictedPageTypes(code);active[default=true]
+                          ;;Test5PageTemplate;Test Page 5 Template;customPage/test1;ContentPage
+
+
+INSERT_UPDATE ContentSlotName;name[unique=true];template(uid,$contentCV)[unique=true][default='Test5PageTemplate'];validComponentTypes(code);compTypeGroup(code)
+                             ;SiteLogo;;;logo
+                             ;HeaderLinks;;;headerlinks
+                             ;SearchBox;;;searchbox
+                             ;MiniCart;;;minicart
+                             ;NavigationBar;;;navigation
+                             ;Footer;;;footer
+                             ;TopHeaderSlot;;;wide
+                             ;BottomHeaderSlot;;;wide
+
+
+INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];name;active
+                         ;;SiteLogoSlot;Default Site Logo Slot;true
+                         ;;HeaderLinksSlot;Header links;true
+                         ;;SearchBoxSlot;Search Box;true
+                         ;;MiniCartSlot;Mini Cart;true
+                         ;;NavigationBarSlot;Navigation Bar;true
+                         ;;FooterSlot;Footer;true
+                         ;;TopHeaderSlot;Top Header;true
+                         ;;BottomHeaderSlot;Bottom Header;true
+
+
+INSERT_UPDATE ContentSlotForTemplate;$contentCV[unique=true];uid[unique=true];position[unique=true];pageTemplate(uid,$contentCV)[unique=true][default='Test5PageTemplate'];contentSlot(uid,$contentCV)[unique=true];allowOverwrite
+                                    ;;SiteLogo-Test5;SiteLogo;;SiteLogoSlot;true
+                                    ;;HeaderLinks-Test5;HeaderLinks;;HeaderLinksSlot;true
+                                    ;;SearchBox-Test5;SearchBox;;SearchBoxSlot;true
+                                    ;;MiniCart-Test5;MiniCart;;MiniCartSlot;true
+                                    ;;NavigationBar-Test5;NavigationBar;;NavigationBarSlot;true
+                                    ;;Footer-Test5;Footer;;FooterSlot;true
+                                    ;;TopHeaderSlot-Test5;TopHeaderSlot;;TopHeaderSlot;true
+                                    ;;BottomHeaderSlot-Test5;BottomHeaderSlot;;BottomHeaderSlot;true
+
+
+
+INSERT_UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];name;masterTemplate(uid,$contentCV);label;defaultPage[default='true'];approvalStatus(code)[default='approved'];homepage[default='false']
+                         ;;formLable  ;Test5;Test5PageTemplate;/formLable
+
+$contentCatalog=electronicsContentCatalog
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+
+
+
+INSERT_UPDATE PageTemplate;$contentCV[unique=true];uid[unique=true];name;frontendTemplateName;restrictedPageTypes(code);active[default=true]
+                          ;;manufacturerRegTemplate;manufacturer Reg Template;manufacturerData/registerManufacturerDetailsPage;ContentPage
+
+
+INSERT_UPDATE ContentSlotName;name[unique=true];template(uid,$contentCV)[unique=true][default='manufacturerRegTemplate'];validComponentTypes(code);compTypeGroup(code)
+                             ;SiteLogo;;;logo
+                             ;HeaderLinks;;;headerlinks
+                             ;SearchBox;;;searchbox
+                             ;MiniCart;;;minicart
+                             ;NavigationBar;;;navigation
+                             ;Footer;;;footer
+                             ;TopHeaderSlot;;;wide
+                             ;BottomHeaderSlot;;;wide
+
+
+
+
+
+INSERT_UPDATE ContentSlotForTemplate;$contentCV[unique=true];uid[unique=true];position[unique=true];pageTemplate(uid,$contentCV)[unique=true][default='manufacturerRegTemplate'];contentSlot(uid,$contentCV)[unique=true];allowOverwrite
+                                    ;;SiteLogo-Test6;SiteLogo;;SiteLogoSlot;true
+                                    ;;HeaderLinks-Test6;HeaderLinks;;HeaderLinksSlot;true
+                                    ;;SearchBox-Test6;SearchBox;;SearchBoxSlot;true
+                                    ;;MiniCart-Test6;MiniCart;;MiniCartSlot;true
+                                    ;;NavigationBar-Test6;NavigationBar;;NavigationBarSlot;true
+                                    ;;Footer-Test6;Footer;;FooterSlot;true
+                                    ;;TopHeaderSlot-Test6;TopHeaderSlot;;TopHeaderSlot;true
+                                    ;;BottomHeaderSlot-Test6;BottomHeaderSlot;;BottomHeaderSlot;true
+
+
+
+INSERT_UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];name;masterTemplate(uid,$contentCV);label;defaultPage[default='true'];approvalStatus(code)[default='approved'];homepage[default='false']
+                         ;;manufacturerReg  ;Test6;manufacturerRegTemplate;/manufacturerReg

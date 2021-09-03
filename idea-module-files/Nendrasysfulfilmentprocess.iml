@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module descriptorType="CUSTOM" importedAsReadOnly="false" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="Nendrasysfulfilmentprocessspring" name="Nendrasysfulfilmentprocessspring" removed="false">
+          <dependency>acceleratorservicesspring==acceleratorservices</dependency>
+          <dependency>ticketsystemspring==ticketsystem</dependency>
+          <file>file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/resources/Nendrasysfulfilmentprocess/process/consignment-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/resources/Nendrasysfulfilmentprocess/process/return-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/resources/Nendrasysfulfilmentprocess-spring.xml</file>
+          <file>file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/resources/Nendrasysfulfilmentprocess/process/order-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/project.properties</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://download.hybris.com/api/2005/commercesuite" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess">
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/web/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/web/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/web/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/web/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/commonweb/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/commonweb/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/commonweb/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/commonweb/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/acceleratoraddon/web/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/acceleratoraddon/web/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/acceleratoraddon/web/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/acceleratoraddon/web/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/backoffice/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/backoffice/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/backoffice/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/backoffice/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/acceleratoraddon/web/addonsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/acceleratoraddon/web/commonwebsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/acceleratoraddon/web/testclasses" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/backoffice/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/commonweb/addonsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/commonweb/commonwebsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/commonweb/testclasses" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/testclasses" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/web/addonsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/web/commonwebsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/web/testclasses" />
+      <excludeFolder url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/web/webroot/WEB-INF/classes" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../hybris/bin/custom/Nendrasys/Nendrasysfulfilmentprocess/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="acceleratorservices" exported="" />
+    <orderEntry type="module" module-name="ticketsystem" exported="" />
+  </component>
+</module>

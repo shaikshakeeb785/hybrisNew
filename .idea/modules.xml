@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/Nendrasysbackoffice.iml" filepath="$PROJECT_DIR$/idea-module-files/Nendrasysbackoffice.iml" group="Custom/Nendrasys" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/Nendrasyscore.iml" filepath="$PROJECT_DIR$/idea-module-files/Nendrasyscore.iml" group="Custom/Nendrasys" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/Nendrasysfacades.iml" filepath="$PROJECT_DIR$/idea-module-files/Nendrasysfacades.iml" group="Custom/Nendrasys" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/Nendrasysfulfilmentprocess.iml" filepath="$PROJECT_DIR$/idea-module-files/Nendrasysfulfilmentprocess.iml" group="Custom/Nendrasys" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/Nendrasysinitialdata.iml" filepath="$PROJECT_DIR$/idea-module-files/Nendrasysinitialdata.iml" group="Custom/Nendrasys" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/Nendrasysstorefront.iml" filepath="$PROJECT_DIR$/idea-module-files/Nendrasysstorefront.iml" group="Custom/Nendrasys" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/Nendrasystest.iml" filepath="$PROJECT_DIR$/idea-module-files/Nendrasystest.iml" group="Custom/Nendrasys" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/acceleratorbackoffice.iml" filepath="$PROJECT_DIR$/idea-module-files/acceleratorbackoffice.iml" group="Hybris/core-accelerator" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/acceleratorcms.iml" filepath="$PROJECT_DIR$/idea-module-files/acceleratorcms.iml" group="Hybris/core-accelerator" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/acceleratorfacades.iml" filepath="$PROJECT_DIR$/idea-module-files/acceleratorfacades.iml" group="Hybris/core-accelerator" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/acceleratorservices.iml" filepath="$PROJECT_DIR$/idea-module-files/acceleratorservices.iml" group="Hybris/core-accelerator" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/acceleratorstorefrontcommons.iml" filepath="$PROJECT_DIR$/idea-module-files/acceleratorstorefrontcommons.iml" group="Hybris/core-accelerator" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/advancedsavedquery.iml" filepath="$PROJECT_DIR$/idea-module-files/advancedsavedquery.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/apiregistrybackoffice.iml" filepath="$PROJECT_DIR$/idea-module-files/apiregistrybackoffice.iml" group="Hybris/api-registry" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/apiregistryservices.iml" filepath="$PROJECT_DIR$/idea-module-files/apiregistryservices.iml" group="Hybris/api-registry" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/apparelstore.iml" filepath="$PROJECT_DIR$/idea-module-files/apparelstore.iml" group="Hybris/b2c-accelerator" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/auditreportservices.iml" filepath="$PROJECT_DIR$/idea-module-files/auditreportservices.iml" group="Hybris/platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/backoffice.iml" filepath="$PROJECT_DIR$/idea-module-files/backoffice.iml" group="Hybris/backoffice-framework" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/basecommerce.iml" filepath="$PROJECT_DIR$/idea-module-files/basecommerce.iml" group="Hybris/base-commerce" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/basecommercebackoffice.iml" filepath="$PROJECT_DIR$/idea-module-files/basecommercebackoffice.iml" group="Hybris/base-commerce" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/catalog.iml" filepath="$PROJECT_DIR$/idea-module-files/catalog.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/cms2.iml" filepath="$PROJECT_DIR$/idea-module-files/cms2.iml" group="Hybris/web-content-management-system" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/cms2lib.iml" filepath="$PROJECT_DIR$/idea-module-files/cms2lib.iml" group="Hybris/web-content-management-system" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/cmsfacades.iml" filepath="$PROJECT_DIR$/idea-module-files/cmsfacades.iml" group="Hybris/web-content-management-system" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/comments.iml" filepath="$PROJECT_DIR$/idea-module-files/comments.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/commercefacades.iml" filepath="$PROJECT_DIR$/idea-module-files/commercefacades.iml" group="Hybris/commerce-services" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/commerceservices.iml" filepath="$PROJECT_DIR$/idea-module-files/commerceservices.iml" group="Hybris/commerce-services" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/commerceservicesbackoffice.iml" filepath="$PROJECT_DIR$/idea-module-files/commerceservicesbackoffice.iml" group="Hybris/commerce-services" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/commons.iml" filepath="$PROJECT_DIR$/idea-module-files/commons.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/config.iml" filepath="$PROJECT_DIR$/idea-module-files/config.iml" group="Custom" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/core.iml" filepath="$PROJECT_DIR$/idea-module-files/core.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/customerreview.iml" filepath="$PROJECT_DIR$/idea-module-files/customerreview.iml" group="Hybris/base-commerce" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/deliveryzone.iml" filepath="$PROJECT_DIR$/idea-module-files/deliveryzone.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/electronicsstore.iml" filepath="$PROJECT_DIR$/idea-module-files/electronicsstore.iml" group="Hybris/b2c-accelerator" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/europe1.iml" filepath="$PROJECT_DIR$/idea-module-files/europe1.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/hac.iml" filepath="$PROJECT_DIR$/idea-module-files/hac.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/impex.iml" filepath="$PROJECT_DIR$/idea-module-files/impex.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/maintenanceweb.iml" filepath="$PROJECT_DIR$/idea-module-files/maintenanceweb.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/mediaweb.iml" filepath="$PROJECT_DIR$/idea-module-files/mediaweb.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/oauth2.iml" filepath="$PROJECT_DIR$/idea-module-files/oauth2.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/payment.iml" filepath="$PROJECT_DIR$/idea-module-files/payment.iml" group="Hybris/base-commerce" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/paymentstandard.iml" filepath="$PROJECT_DIR$/idea-module-files/paymentstandard.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/platform.iml" filepath="$PROJECT_DIR$/idea-module-files/platform.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/platformbackoffice.iml" filepath="$PROJECT_DIR$/idea-module-files/platformbackoffice.iml" group="Hybris/backoffice-framework" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/platformservices.iml" filepath="$PROJECT_DIR$/idea-module-files/platformservices.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/processing.iml" filepath="$PROJECT_DIR$/idea-module-files/processing.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/promotions.iml" filepath="$PROJECT_DIR$/idea-module-files/promotions.iml" group="Hybris/base-commerce" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/promotionsbackoffice.iml" filepath="$PROJECT_DIR$/idea-module-files/promotionsbackoffice.iml" group="Hybris/base-commerce" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/scripting.iml" filepath="$PROJECT_DIR$/idea-module-files/scripting.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/solrfacetsearch.iml" filepath="$PROJECT_DIR$/idea-module-files/solrfacetsearch.iml" group="Hybris/search-and-navigation" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/solrfacetsearchbackoffice.iml" filepath="$PROJECT_DIR$/idea-module-files/solrfacetsearchbackoffice.iml" group="Hybris/search-and-navigation" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/solrserver.iml" filepath="$PROJECT_DIR$/idea-module-files/solrserver.iml" group="Hybris/search-and-navigation" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/springintegrationlibs.iml" filepath="$PROJECT_DIR$/idea-module-files/springintegrationlibs.iml" group="Hybris/platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/testweb.iml" filepath="$PROJECT_DIR$/idea-module-files/testweb.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/ticketsystem.iml" filepath="$PROJECT_DIR$/idea-module-files/ticketsystem.iml" group="Hybris/customer-service" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/validation.iml" filepath="$PROJECT_DIR$/idea-module-files/validation.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/voucher.iml" filepath="$PROJECT_DIR$/idea-module-files/voucher.iml" group="Hybris/base-commerce" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/voucherbackoffice.iml" filepath="$PROJECT_DIR$/idea-module-files/voucherbackoffice.iml" group="Hybris/base-commerce" />
+      <module fileurl="file://$PROJECT_DIR$/idea-module-files/workflow.iml" filepath="$PROJECT_DIR$/idea-module-files/workflow.iml" group="Platform" />
+    </modules>
+  </component>
+</project>

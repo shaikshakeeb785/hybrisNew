@@ -1,0 +1,52 @@
+#* @vtlvariable name="model" type="de.hybris.platform.core.model.ItemModel" *#
+#* @vtlvariable name="class" type="java.lang.String" *#
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100" height="100">
+	<style type="text/css">
+        div.node-container {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            width: 200px;
+            height: 200px;
+        }
+
+        div.node-container-text {
+            margin: 0px 35px;
+            max-height: 90px;
+            width: 130px;
+            color: #008ADC;
+            font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 18pt;
+            overflow: hidden;
+            word-break: normal;
+        }
+
+        rect.decision-outer {
+			fill: #008ADC;
+        }
+		rect.decision-inner {
+			fill: #fff;
+		}
+
+		rect.decision-inner.selected {
+			fill: #D4E5FF;
+		}
+
+	</style>
+	<g>
+		<rect class="decision-outer $class" ry="5" x="30" y="30" width="140" height="140" transform="rotate(45 100 100)" />
+		<rect class="decision-inner $class" ry="5" x="34" y="34" width="132" height="132" transform="rotate(45 100 100)"/>
+		<foreignObject x="0" y="0" width="200px" height="200px">
+			<div xmlns="http://www.w3.org/1999/xhtml" class="node-container">
+				<div class="node-container-text">
+                    #if (!$model.getName() || "$model.getName()" == "")
+						<span>[$model.getCode()]</span>
+                    #else
+						<span>$model.getName()</span>
+                    #end
+				</div>
+			</div>
+		</foreignObject>
+	</g>
+</svg>

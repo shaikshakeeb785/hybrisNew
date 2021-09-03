@@ -1,0 +1,51 @@
+$contentCatalog=electronicsContentCatalog
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+
+$productCatalog=electronicsProductCatalog
+$productCatalogName=Electronics Product Catalog
+$productCV=catalogVersion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$picture=media(code, $contentCV) ;
+$siteResource=jar:de.hybris.platform.electronicsstore.constants.ElectronicsstoreConstants&/electronicsstore/import/sampledata/contentCatalogs/$contentCatalog
+$lang=en
+$category=category(code, $productCV)
+INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];&imageRef;folder(qualifier)[default='images'];altText
+                   ;;CustomMedia;$siteResource/images/banners/category/responsive/Elec_1400x140_Category10_EN_01_1400W.jpg;;Elec_1400x140_Category10_EN_01_1400W.jpg;;"Shop Now"
+
+
+
+
+INSERT_UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];name;&componentRef
+                                   ;;CustomBannerComponent;sale know on Banner Component;CustomMedia
+
+UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];$picture[lang=$lang]
+                            ;;CustomBannerComponent;CustomMedia
+
+INSERT_UPDATE ContentSlotName;name[unique=true];template(uid,$contentCV)[unique=true][default='manufacturerRegTemplate'];validComponentTypes(code);compTypeGroup(code)
+                             ;CustomBannerSlotName5;;;wide
+
+INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];name;active;cmsComponents(uid,$contentCV)
+                         ;;CustomBannerSlot1;CustomBanner Info Slot;true;CustomBannerComponent
+
+INSERT_UPDATE ContentSlotForPage;$contentCV[unique=true];uid[unique=true];position[unique=true];page(uid,$contentCV)[unique=true][default='carouselPage'];contentSlot(uid,$contentCV)[unique=true]
+                                ;;CustomBannerForPage5;CustomBannerSlotName5;;CustomBannerSlot1
+
+
+INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];&imageRef;folder(qualifier)[default='images'];altText
+                   ;;ManufractureDetailMedia;$siteResource/images/banners/homepage/responsive/Elec_770x350_HomeSpeed_EN_01_770W.jpg;;Elec_770x350_HomeSpeed_EN_01_770W.jpg;;ManufractureDetailMedia.jpeg;;
+
+
+
+INSERT_UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];name;&componentRef
+                                   ;;ManufractureDetailComponent;Custom1 Banner Component;ManufractureDetailMedia
+
+UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];$picture[lang=$lang]
+                            ;;ManufractureDetailComponent;ManufractureDetailMedia
+
+INSERT_UPDATE ContentSlotName;name[unique=true];template(uid,$contentCV)[unique=true][default='manufacturerRegTemplate'];validComponentTypes(code);compTypeGroup(code)
+                             ;ManufractureDetailSlotName1;;;wide
+
+INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];name;active;cmsComponents(uid,$contentCV)
+                         ;;ManufractureDetailSlot1;ManufractureDetail1 Info Slot;true;ManufractureDetailComponent
+
+INSERT_UPDATE ContentSlotForPage;$contentCV[unique=true];uid[unique=true];position[unique=true];page(uid,$contentCV)[unique=true][default='carouselPage'];contentSlot(uid,$contentCV)[unique=true]
+                                ;;ManufractureDetailForPage1-manufacturerDetailFormPage1;ManufractureDetailSlotName1;;ManufractureDetailSlot1

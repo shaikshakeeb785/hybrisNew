@@ -1,0 +1,10 @@
+INSERT_UPDATE ServicelayerJob;code[unique=true];springId
+                             ;IsNewCustomerJobPerformable;customerJobPerformable
+
+INSERT_UPDATE IsNewCustomerCronjob;code[unique=true];job(code);xDaysOld;sessionLanguage(isoCode)[default=en];sessionCurrency(isoCode)
+                                  ;IsNewCustomerCronjob;IsNewCustomerJobPerformable;10;en;EUR
+
+#Run Cronjob IsNewCustomerCronjob at 10 AM Every Day
+INSERT_UPDATE Trigger;cronJob(code)[unique=true];active;cronExpression
+                     ;IsNewCustomerCronjob;true;0 0 10 * * ?
+

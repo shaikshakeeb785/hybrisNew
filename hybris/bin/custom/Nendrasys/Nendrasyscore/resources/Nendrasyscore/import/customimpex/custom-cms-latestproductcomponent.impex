@@ -1,0 +1,28 @@
+$contentCatalog=electronicsContentCatalog
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+INSERT_UPDATE LatestProductComponent;$contentCV[unique=true];uid[unique=true];name;numberOfProduct;&componentRef;
+                                   ;;latestProductComponent;latest Product Component;10;latestProductComponent
+
+INSERT_UPDATE ContentSlotName;name[unique=true];template(uid,$contentCV)[unique=true][default='LandingPage2Template'];validComponentTypes(code);compTypeGroup(code)
+                             ;LatestProductSlotName;;LatestProductComponent
+INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];name;active;cmsComponents(&componentRef)
+                         ;;LatestProductContentSlot;Latest Product Contentslot;true;latestProductComponent
+INSERT_UPDATE ContentSlotForPage;$contentCV[unique=true];uid[unique=true];position[unique=true];page(uid,$contentCV)[unique=true][default='homepage'];contentSlot(uid,$contentCV)[unique=true]
+                                ;;LatestProductslotforpage;LatestProductSlotName;;LatestProductContentSlot
+
+
+
+$contentCatalog=electronicsContentCatalog
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+
+INSERT_UPDATE LatestProductComponent;$contentCV[unique=true];uid[unique=true];name;numberOfProduct;&componentRef
+                                     ;;latestProductsComponent;latest Products;10;latestProductsComponent
+
+INSERT_UPDATE ContentSlotName;name[unique=true];template(uid,$contentCV)[unique=true][default='LandingPage2Template'];validComponentTypes(code);compTypeGroup(code)
+                             ;LatestProductsSlotName;;LatestProductComponent
+
+INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];name;active;cmsComponents(&componentRef)
+                         ;;latestProductsSlot;Latest Products;true;latestProductsComponent
+
+INSERT_UPDATE ContentSlotForPage;$contentCV[unique=true];uid[unique=true];position[unique=true];page(uid,$contentCV)[unique=true][default='homepage'];contentSlot(uid,$contentCV)[unique=true]
+                                ;;LatestProductsforpage-Homepage;LatestProductsSlotName;;latestProductsSlot

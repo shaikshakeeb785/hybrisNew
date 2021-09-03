@@ -1,0 +1,99 @@
+#Existing one
+
+INSERT_UPDATE CMSNavigationNode;uid[unique=true];$contentCV[unique=true];name;parent(uid, $contentCV);&nodeRef;children(uid,$contentCV)
+                               ;ElectronicsCategoryNavNode;;Categories;ElectronicsNavNode;ElectronicsCategoryNavNode;BrandsNavNode,DigitalCamerasNavNode,FilmCamerasNavNode,HandheldCamcordersNavNode,WebcamsNavNode,PowerSuppliesNavNode,FlashMemoryNavNode,CameraAccessoriesNavNode
+
+
+# entries of the above navigation nodes ##
+INSERT_UPDATE CMSNavigationEntry;uid[unique=true];$contentCV[unique=true];name;navigationNode(&nodeRef);item(CMSLinkComponent.uid,CMSLinkComponent.$contentCV);
+                                ;BrandsNavNodeEntry;;Brands Navigation Node Entry;BrandsNavNode;AllBrandsCategoryLink;
+                                ;DigitalCamerasNavNodeEntry;;Digital Cameras Navigation Node Entry;DigitalCamerasNavNode;DigitalCamerasCategoryLink;
+                                ;FilmCamerasNavNodeEntry;;Film Cameras Navigation Node Entry;FilmCamerasNavNode;FilmCamerasCategoryLink;
+                                ;HandheldCamcordersNavNodeEntry;;Handheld Camcorders Navigation Node Entry;HandheldCamcordersNavNode;HandheldCamcordersCategoryLink;
+                                ;WebcamsNavNodeEntry;;Webcams Navigation Node Entry;WebcamsNavNode;WebcamsCategoryLink;
+                                ;PowerSuppliesNavNodeEntry;;Power Supplies Navigation Node Entry;PowerSuppliesNavNode;PowerSuppliesCategoryLink;
+                                ;FlashMemoryNavNodeEntry;;Flash Memory Navigation Node Entry;FlashMemoryNavNode;FlashMemoryCategoryLink;
+                                ;CameraAccessoriesNavNodeEntry;;Camera Accessories Navigation Node Entry;CameraAccessoriesNavNode;CameraAccessoriesCategoryLink;
+# CMS Link Components
+INSERT_UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];name;url;&linkRef;&componentRef;target(code)[default='sameWindow'];;;
+                              ;;HomepageNavLink;Home Page Nav Link;/;HomepageNavLink;HomepageNavLink;;;;
+                              ;;StoreFinderLink;Store Finder Link;/store-finder;StoreFinderLink;StoreFinderLink;;;;
+                              ;;LoginLink;Login Link;/login;LoginLink;LoginLink;;;;
+                              ;;AllBrandsCategoryLink;All Brands Link;/Brands/c/brands;AllBrandsCategoryLink;AllBrandsCategoryLink;;brands;;
+                              ;;SonyBrandCategoryLink;Sony Link;/Brands/Sony/c/brand_5;SonyBrandCategoryLink;SonyBrandCategoryLink;;brand_5;;
+                              ;;CanonBrandCategoryLink;Canon Link;/Brands/Canon/c/brand_10;CanonBrandCategoryLink;CanonBrandCategoryLink;;brand_10;;
+                              ;;KodakBrandCategoryLink;Kodak Link;/Brands/Kodak/c/brand_88;KodakBrandCategoryLink;KodakBrandCategoryLink;;brand_88;;
+                              ;;SamsungBrandCategoryLink;Samsung Link;/Brands/Samsung/c/brand_26;SamsungBrandCategoryLink;SamsungBrandCategoryLink;;brand_26;;
+                              ;;ToshibaBrandCategoryLink;Toshiba Link;/Brands/Toshiba/c/brand_2;ToshibaBrandCategoryLink;ToshibaBrandCategoryLink;;brand_2;;
+                              ;;FujifilmBrandCategoryLink;Fujifilm Link;/Brands/Fujifilm/c/brand_75;FujifilmBrandCategoryLink;FujifilmBrandCategoryLink;;brand_75;;
+                              ;;KingstonBrandCategoryLink;Kingston Link;/Brands/Kingston/c/brand_18;KingstonBrandCategoryLink;KingstonBrandCategoryLink;;brand_18;;
+                              ;;IciduBrandCategoryLink;Icidu Link;/Brands/ICIDU/c/brand_2171;IciduBrandCategoryLink;IciduBrandCategoryLink;;brand_2171;;
+                              ;;TDKBrandCategoryLink;TDK Link;/Brands/TDK/c/brand_251;TDKBrandCategoryLink;TDKBrandCategoryLink;;brand_251;;
+                              ;;SweexBrandCategoryLink;Sweex Link;/Brands/Sweex/c/brand_702;SweexBrandCategoryLink;SweexBrandCategoryLink;;brand_702;;
+                              ;;DigitalCompactsCategoryLink;Digital Compacts Link;/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/c/576;DigitalCompactsCategoryLink;DigitalCompactsCategoryLink;;576;;
+                              ;;DigitalSLRCategoryLink;Digital SLR Link;/Open-Catalogue/Cameras/Digital-Cameras/Digital-SLR/c/578;DigitalSLRCategoryLink;DigitalSLRCategoryLink;;578;;
+                              ;;CamerasCategoryLink;Cameras Category Link;/Open-Catalogue/Cameras/c/571;CamerasCategoryLink;CamerasCategoryLink;;571;;
+                              ;;ComponentsCategoryLink;Components Category Link;/Open-Catalogue/Components/c/106;ComponentsCategoryLink;ComponentsCategoryLink;;106;;
+                              ;;DigitalCamerasCategoryLink;Digital Cameras Category Link;/Open-Catalogue/Cameras/Digital-Cameras/c/575;DigitalCamerasCategoryLink;DigitalCamerasCategoryLink;;575;;
+                              ;;FilmCamerasCategoryLink;Film Cameras Category Link;/Open-Catalogue/Cameras/Film-Cameras/c/574;FilmCamerasCategoryLink;FilmCamerasCategoryLink;;574;;
+                              ;;CameraAccessoriesCategoryLink;Camera Accessories Category Link;/Open-Catalogue/Cameras/Camera-Accessories-26-Supplies/c/585;CameraAccessoriesCategoryLink;CameraAccessoriesCategoryLink;;585;;
+                              ;;PowerSuppliesCategoryLink;Power Supplies Category Link;/Open-Catalogue/Components/Power-Supplies/c/816;PowerSuppliesCategoryLink;PowerSuppliesCategoryLink;;816;;
+                              ;;FlashMemoryCategoryLink;Flash Memory Category Link;/Open-Catalogue/Data-storage/Flash-Memory/c/902;FlashMemoryCategoryLink;FlashMemoryCategoryLink;;902;;
+                              ;;HandheldCamcordersCategoryLink;Handheld Camcorders Category Link;/Open-Catalogue/Cameras/Hand-held-Camcorders/c/584;HandheldCamcordersCategoryLink;HandheldCamcordersCategoryLink;;584;;
+                              ;;SpecialOffersLink;Special Offers Link;"/Open-Catalogue/c/1?q=%3AtopRated%3AallPromotions%3ABOGOFElectronics%3AallPromotions%3A10DiscountCanonEOS450D%3AallPromotions%3AMultiBuyElectronics%3AallPromotions%3APerfectPartnerElectronics%3AallPromotions%3AProductBundleElectronics";SpecialOffersLink;SpecialOffersLink;;1;;
+                              ;;CamerasFlashesCategoryLink;Cameras Flashes Category Link;/Open-Catalogue/Cameras/Camera-Accessories-26-Supplies/Camera-Flashes/c/586;CamerasFlashesCategoryLink;CamerasFlashesCategoryLink;;586;;
+                              ;;TripodsCategoryLink;Tripods Category Link;/Open-Catalogue/Cameras/Camera-Accessories-26-Supplies/Tripods/c/587;TripodsCategoryLink;TripodsCategoryLink;;587;;
+                              ;;CameraLensesCategoryLink;Camera Lenses Category Link;/Open-Catalogue/Cameras/Camera-Accessories-26-Supplies/Camera-Lenses/c/588;CameraLensesCategoryLink;CameraLensesCategoryLink;;588;;
+                              ;;ColourFilmsCategoryLink;ColourFilms Category Link;/Open-Catalogue/Cameras/Camera-Accessories-26-Supplies/Colour-Films/c/597;ColourFilmsCategoryLink;ColourFilmsCategoryLink;;597;;
+                              ;;BlackAndWhiteFilmsCategoryLink;Black And WhiteFilms Category Link;/Open-Catalogue/Cameras/Camera-Accessories-26-Supplies/Black-26-White-Films/c/598;BlackAndWhiteFilmsCategoryLink;BlackAndWhiteFilmsCategoryLink;;598;;
+                              ;;BlankVideotapesCategoryLink;BlankVideotapes Category Link;/Open-Catalogue/Cameras/Camera-Accessories-26-Supplies/Blank-Video-Tapes/c/604;BlankVideotapesCategoryLink;BlankVideotapesCategoryLink;;604;;
+                              ;;AboutSAPCommerceLink;About SAP Commerce Cloud Link;"http://www.cx.sap.com/products/commerce";AboutSAPCommerceLink;AboutSAPCommerceLink;newWindow;;;
+                              ;;DocumentationLink;Documentation Link;"https://help.hybris.com";DocumentationLink;DocumentationLink;newWindow;;;
+                              ;;VisitSAPLink;Visit SAP Link;"http://www.hcx.sap.com";VisitSAPLink;VisitSAPLink;newWindow;;;
+                              ;;ContactUsLink;Contact Us Link;"http://www.cx.sap.com/contact";ContactUsLink;ContactUsLink;newWindow;;;
+                              ;;FacebookLink;Facebook Link;"http://www.facebook.com/sapcx/";FacebookLink;FacebookLink;newWindow;;;
+                              ;;TwitterLink;Twitter Link;"http://www.twitter.com/SAP_CX";TwitterLink;TwitterLink;newWindow;;;
+                              ;;AgileCommerceBlogLink;Agile Commerce Blog Link;"http://www.agile-commerce.com/";AgileCommerceBlogLink;AgileCommerceBlogLink;newWindow;;;
+                              ;;LinkedInLink;Linked In Link;"http://www.linkedin.com/groups/5063400";LinkedInLink;LinkedInLink;newWindow;;;
+                              ;;FAQLink;FAQ Link;/faq;FAQLink;FAQLin;;;;
+# ;;TermsAndConditionsLink;Terms and Conditions Link;/termsAndCoqnditions;TermsAndConditionsLink;TermsAndConditionsLink;;;;
+                              ;;AccountHomeLink;Account Home Link;/my-account;AccountHomeLink;AccountHomeLink;;;;
+                              ;;AccountProfileLink;AccountProfileLink;/my-account/profile;AccountProfileLink;AccountProfileLink;;;;
+                              ;;AccountPersonalDetailsLink;AccountPersonalDetailsLink;/my-account/profile;AccountPersonalDetailsLink;AccountPersonalDetailsLink;;;;
+                              ;;AccountUpdatePasswordLink;AccountUpdatePasswordLink;/my-account/update-password;AccountUpdatePasswordLink;AccountUpdatePasswordLink;;;;
+                              ;;AccountAddressBookLink;AccountAddressBookLink;/my-account/address-book;AccountAddressBookLink;AccountAddressBookLink;;;;
+                              ;;AccountManageAddressLink;AccountManageAddressLink;/my-account/address-book;AccountManageAddressLink;AccountManageAddressLink;;;;
+                              ;;AccountPaymentDetailsLink;AccountPaymentDetailsLink;/my-account/payment-details;AccountPaymentDetailsLink;AccountPaymentDetailsLink;;;;
+                              ;;AccountManagePaymentDetailsLink;AccountManagePaymentDetailsLink;/my-account/payment-details;AccountManagePaymentDetailsLink;AccountManagePaymentDetailsLink;;;;
+                              ;;AccountOrderHistoryLink;AccountOrderHistoryLink;/my-account/orders;AccountOrderHistoryLink;AccountOrderHistoryLink;;;;
+                              ;;AccountViewOrderHistoryLink;AccountViewOrderHistoryLink;/my-account/orders;AccountViewOrderHistoryLink;AccountViewOrderHistoryLink;;;;
+$lang=de
+UPDATE CMSNavigationNode;$contentCV[unique=true];uid[unique=true];title[lang=$lang]
+                        ;;AccessoriesNavNode;"Zubehör"
+UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];linkName[lang=$lang]
+                       ;;AboutSAPCommerceLink;"About SAP Commerce Cloud"
+$productCatalog=apparelProductCatalog
+$productCV=catalogVersion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+INSERT_UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];name;url;category(code, $productCV);target(code)[default='sameWindow'];;
+                              ;;TermsAndConditionsLink;Terms and Conditions Link;/termsAndConditions;;;
+
+$contentCatalog=electronicsContentCatalog
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+
+
+INSERT_UPDATE CMSNavigationNode;uid[unique=true];$contentCV[unique=true];name;parent(uid,$contentCV);links(&linkRef);&nodeRef;
+                               ;ManufacturerNavNode;;Manufacturer Nav Node;ElectronicsCategoryNavNode;;ManufacturerNavNode
+
+INSERT_UPDATE CMSNavigationEntry;uid[unique=true];$contentCV[unique=true];name;navigationNode(&nodeRef);item(CMSLinkComponent.uid,CMSLinkComponent.$contentCV);
+                                ;ManufacturerNavNodeEntry;;Manufacturer Nav Node Entry;ManufacturerNavNode;ManufacturerLink;
+
+
+INSERT_UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];name;url;target(code)[default='sameWindow'];;
+                              ;;ManufacturerLink;Manufacturer Link;/registerManufacturerDetails;;;;
+# In above  line  /registerManufacturerDetails is url
+
+INSERT_UPDATE CMSNavigationNode;$contentCV[unique=true];uid[unique=true];title[lang=en]
+                               ;;ManufacturerNavNode;"ManufacturerDetails"
+
+UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];linkName[lang=en]
+                       ;;ManufacturerLink;"ManufacturerDetails"

@@ -1,0 +1,10 @@
+@import 'D:/habrisBatch2021/hybris/bin/modules/backoffice-framework/backoffice/resources/backoffice/generated/cockpitng/cng/scss/cockpitng-globals.scss';
+@import 'D:/habrisBatch2021/hybris/bin/modules/backoffice-framework/backoffice/resources/backoffice/generated/backoffice/scss/backoffice-variables.scss';
+
+@import '../support/_workflowsearch-variables.scss';
+
+.yw-workflowsearch {
+    &-additional-filters {
+        clear: both;
+    }
+}

@@ -1,0 +1,11 @@
+backoffice-core-20.05.0-RC3.jar
+backoffice-widgets-20.05.0-RC3.jar
+cockpitadmin-20.05.0-RC3.jar
+cockpitcore-20.05.0-RC3.jar
+cockpit-data-integration-20.05.0-RC3.jar
+cockpit-demo-widgets-20.05.0-RC3.jar
+cockpitframework-20.05.0-RC3.jar
+cockpit-module-aggregator-20.05.0-RC3.jar
+cockpit-standard-editors-20.05.0-RC3.jar
+cockpittesting-20.05.0-RC3.jar
+cockpitwidgets-20.05.0-RC3.jar

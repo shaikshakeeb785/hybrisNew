@@ -1,0 +1,43 @@
+Insert_update ManufacturerDetails;id[unique=true];name;city;country(isocode);product(code)
+                                 ;Manufacturer_6;samung;balbeer sing;AE
+                                 ;Manufacturer_7;motorla;saugat sharma;AF
+                                 ;Manufacturer_8;apple;AL MURTUZA SHAIK;AG
+                                 ;Manufacturer_9;whorlpool;SHERBAN SHAIK;AI
+                                 ;Manufacturer_10;syntct;PERL HERB;AL
+                                 ;Manufacturer_11;usha;ZUHU;AM
+                                 ;Manufacturer_12;kacheda;CHI MIYOON;AO
+                                 ;Manufacturer_13;nova;MARK ZURG;AR
+                                 ;Manufacturer_14;luminus;fo gy;AS
+                                 ;Manufacturer_15;boat;Ali baba;AT
+                                 ;Manufacturer_16;fastract;sain merk yoon;AU
+                                 ;Manufacturer_17;acnonza;yoo zoo fo;AW
+
+
+$productCatalog=electronicProductCatalog
+$catalogVersion=catalogVersion(catalogVersion.catalog(catalog.id[default=$productCatalog]),catalogVersion.version[default=Online])[default=$productCatalog:Online]
+
+Insert_update ManufacturerDetails;id[unique=true];name;city;country(isocode);product(code,$catalogVersion)
+;30002;boot;BIDAR;IN;1978440_md_red
+
+
+
+INSERT_UPDATE ManufacturerDetails;id[unique=true];name;city;country(isocode);userAddressMap(key(code),value(code))[map-delimetir=|];product(code,$catalogVersion)
+                                 ;30009;boot;BIDAR;IN;Address Line1->Noor khan|Address Line2->bibi galliAddress Line3->top galli;1978440_md_red
+
+
+
+INSERT_UPDATE ManufacturerDetails;id[unique=true];name;city;country(isocode);userAddressMap(key(code),value(code))[map-delimetir=|];product(code,$catalogVersion)
+                                 ;30054;royal;hyd;IN;Address Line1->Noor khan|Address Line2->bibi galli |Address Line3->top galli;1978440_md
+
+
+
+INSERT_UPDATE ManufacturerDetails;id[unique=true];name;city;country(isocode);userAddressMap(key(code),value(code))[map-delimetir=|];product(code,$catalogVersion)
+                                 ;30056;royal;hyd;IN;Address Line1->Noor khan|Address Line2->bibi galli |Address Line3->top galli;1978440_md
+
+INSERT_UPDATE ManufacturerDetails;id[unique=true][allownull=true];name[allownull=true];city;country(isocode);userAddressMap(key(code),value(code))[map-delimetir=|];product(code,$catalogVersion)
+                                 ;;;hyd;IN;Address Line1->Noor khan|Address Line2->bibi galli |Address Line3->top galli;1978440_md
+$productCatalog=electronicsProductCatalog
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Online'])[unique=true,default=$productCatalog:Online]
+
+INSERT_UPDATE ManufacturerDetails;id[unique=true];name;city;country(isocode);product(code,$catalogVersion);userAddressMap(key,value)[map-delimiter=|]
+                                 ;Manufacturer_786;vivo A52 ; madurai; IN;1978440_md_green;Address Line1->8796125954071

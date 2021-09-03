@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="Backoffice Library">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/hybris/bin/modules/api-registry/apiregistrybackoffice/resources/backoffice" />
+      <root url="file://$PROJECT_DIR$/hybris/bin/modules/base-commerce/basecommercebackoffice/resources/backoffice" />
+      <root url="file://$PROJECT_DIR$/hybris/bin/modules/commerce-services/commerceservicesbackoffice/resources/backoffice" />
+      <root url="file://$PROJECT_DIR$/hybris/bin/modules/backoffice-framework/platformbackoffice/resources/backoffice" />
+      <root url="file://$PROJECT_DIR$/hybris/bin/modules/base-commerce/promotionsbackoffice/resources/backoffice" />
+      <root url="file://$PROJECT_DIR$/hybris/bin/modules/search-and-navigation/solrfacetsearchbackoffice/resources/backoffice" />
+      <root url="file://$PROJECT_DIR$/hybris/bin/modules/base-commerce/voucherbackoffice/resources/backoffice" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/hybris/bin/modules/api-registry/apiregistrybackoffice/resources/backoffice" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/hybris/bin/modules/backoffice-framework/platformbackoffice/resources/backoffice" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/hybris/bin/modules/base-commerce/basecommercebackoffice/resources/backoffice" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/hybris/bin/modules/base-commerce/promotionsbackoffice/resources/backoffice" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/hybris/bin/modules/base-commerce/voucherbackoffice/resources/backoffice" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/hybris/bin/modules/commerce-services/commerceservicesbackoffice/resources/backoffice" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/hybris/bin/modules/search-and-navigation/solrfacetsearchbackoffice/resources/backoffice" recursive="true" />
+  </library>
+</component>

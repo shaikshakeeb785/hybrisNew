@@ -1,0 +1,42 @@
+#* @vtlvariable name="model" type="de.hybris.platform.core.model.ItemModel" *#
+#* @vtlvariable name="class" type="java.lang.String" *#
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100" height="100">
+
+	<style>
+
+		.decision-outer {
+			fill: #008ADC;
+		}
+
+		.decision-inner {
+			fill: #fff;
+		}
+
+		.decision-text {
+			fill: #008ADC;
+		}
+
+		.decision-inner.selected {
+			fill: #D4E5FF;
+		}
+
+	</style>
+
+	<g>
+		<rect class="decision-outer $class" ry="5" x="30" y="30" width="140" height="140"
+			  transform="rotate(45 100 100)"/>
+		<rect class="decision-inner $class" ry="5" x="34" y="34" width="132" height="132"
+			  transform="rotate(45 100 100)"/>
+		<text class="decision-text $class" text-anchor="middle"
+			  font-family="Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;"
+			  font-size="18pt" x="50%" y="50%" dy="4.5pt">
+            #if (!$model.getName() || "$model.getName()" == "")
+				<tspan>[$model.getCode()]</tspan>
+            #else
+				<tspan>$model.getName()</tspan>
+            #end
+		</text>
+	</g>
+</svg>

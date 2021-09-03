@@ -1,0 +1,72 @@
+#* @vtlvariable name="model" type="de.hybris.platform.core.model.ItemModel" *#
+#* @vtlvariable name="class" type="java.lang.String" *#
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="200" height="100">
+
+	<style>
+
+		.action-start-outer {
+			fill: #0486E0;
+		}
+
+		.action-start-inner {
+			fill: #fff;
+		}
+
+		.action-start-text {
+			fill: #008ADC;
+		}
+
+		.action-start-inner.selected {
+			fill: #D4E5FF;
+		}
+
+		.action-start-inner.in-progress {
+			fill: #0486E0;
+		}
+
+		.action-start-text.in-progress {
+			fill: #fff;
+		}
+
+		.action-start-outer.completed {
+			fill: #000;
+		}
+
+		.action-start-text.completed {
+			fill: #5eb300;
+		}
+
+		.action-start-outer.terminated {
+			fill: #000;
+		}
+
+		.action-start-text.terminated {
+			fill: #ff3b30;
+		}
+
+		.action-start-outer.pending {
+			fill: #000;
+		}
+
+	</style>
+
+	<g>
+		<rect class="action-start-outer $class" ry="50%" width="200" height="100" y="0" x="0"/>
+		<rect class="action-start-inner $class" ry="50%" width="192" height="92" y="4" x="4"/>
+
+		<svg width="165" x="17.5">
+			<text class="action-start-text $class" text-anchor="middle"
+				  font-family="Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;"
+				  font-size="24pt" x="50%" y="50%" dy="6pt">
+                #if (!$model.getName() || "$model.getName()" == "")
+					<tspan>[$model.getCode()]</tspan>
+                #else
+					<tspan>$model.getName()</tspan>
+                #end
+			</text>
+		</svg>
+
+	</g>
+</svg>

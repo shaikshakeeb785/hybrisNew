@@ -1,0 +1,31 @@
+#existing code
+
+###### Restriction Start ######
+# create a user restriction
+#INSERT_UPDATE CMSUserRestriction;$contentCV[unique=true];&userRestriction;name;uid[unique=true];users(uid)
+#                               ;;anonymousUserRestriction;Anonymous User Restriction;anonymousUserRestriction;anonymous
+
+# create a inverse restriction
+INSERT_UPDATE CMSInverseRestriction;$contentCV[unique=true];name;originalRestriction(&userRestriction)[allownull=true];uid[unique=true];components(&componentRef)
+                                   ;;Logged in User;anonymousUserRestriction;loggedInUser;MyAccountComponent
+
+# CMS Action Restrictions
+INSERT_UPDATE CMSActionRestriction;$contentCV[unique=true];uid[unique=true];name;
+                                  ;;ActionRestriction;A CMSAction restriction;
+
+###### Restriction End ######
+# Category Page Restrictions
+INSERT_UPDATE CMSCategoryRestriction;$contentCV[unique=true];uid[unique=true];name;categories(code, $productCV);pages(uid, $contentCV)
+                                    ;;Cameras-LandingPageRestriction;Restriction for Cameras page;571;Cameras
+                                    ;;DigitalCameras-LandingPageRestriction;Restriction for Digital Cameras page;575;DigitalCameras
+
+$contentCatalog=electronicsContentCatalog
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+
+INSERT_UPDATE CMSUserRestriction;$contentCV[unique=true];&userRestriction;name;uid[unique=true];users(uid)
+                                ;;anonymousUserRestriction;Anonymous User Restriction;anonymousUserRestriction;anonymous
+
+INSERT_UPDATE CMSInverseRestriction;$contentCV[unique=true];name;originalRestriction(&userRestriction)[allownull=true];uid[unique=true];
+                                   ;;Logged in User;anonymousUserRestriction;manufacturerrestriction
+INSERT_UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];name;url;target(code)[default='sameWindow'];;restrictions(uid,$contentCV);&actionRef
+                              ;;ManufacturerLink;Manufacturer Link;/registerManufacturerDetails;;;;manufacturerrestriction

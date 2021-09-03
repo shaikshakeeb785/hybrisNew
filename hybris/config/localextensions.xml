@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hybrisconfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="resources/schemas/extensions.xsd">
+	<extensions>	
+
+		<path dir="${HYBRIS_BIN_DIR}" />	
+
+ <extension name="Nendrasyscore"/>
+ <extension name="Nendrasysbackoffice"/>
+ <extension name="Nendrasysfacades"/>
+ <extension name="Nendrasysfulfilmentprocess"/>
+ <extension name="Nendrasysinitialdata"/>
+ <extension name="Nendrasysstorefront"/>
+ <extension name="Nendrasystest"/>
+		
+		
+	</extensions>
+</hybrisconfig>

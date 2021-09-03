@@ -1,0 +1,34 @@
+
+#Existing one
+
+$contentCatalog=electronicsContentCatalog
+$contentCatalogName=Electronics Content Catalog
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+$productCatalog=electronicsProductCatalog
+$productCatalogName=Electronics Product Catalog
+$productCV=catalogVersion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$siteResource=jar:de.hybris.platform.electronicsstore.constants.ElectronicsstoreConstants&/electronicsstore/import/sampledata/contentCatalogs/$contentCatalog
+$medias=medias(code, $contentCV);
+$mediaContainer=media(qualifier, $contentCV);
+$product=product(code, $productCV)
+$category=category(code, $productCV)
+$jarResourceCms=jar:de.hybris.platform.electronicsstore.constants.ElectronicsstoreConstants&/electronicsstore/import/sampledata/cockpits/cmscockpit
+$media=media(code, $contentCV);
+$productResource=jar:de.hybris.platform.electronicsstore.constants.ElectronicsstoreConstants&/electronicsstore/import/sampledata/productCatalogs/$productCatalog
+$contentCatalog=electronicsContentCatalog
+$productCV=catalogVersion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+INSERT_UPDATE ProductCarouselComponent;$contentCV[unique=true];uid[unique=true];name;products(code,$productCV);scroll(code);popup;&componentRef
+                                      ;;CustomProductCarouselComponent;Custom  Product Carousel;300938,358639,553637,816802,1934793,1382080,1981415,816780,1934406,1986316,592506;allVisible;false;CustomProductCarouselComponent
+INSERT_UPDATE ContentSlotName;name[unique=true];template(uid,$contentCV)[unique=true][default='manufacturerRegTemplate'];validComponentTypes(code);compTypeGroup(code)
+                             ;customCarousel;;CustomProductCarouselComponent
+INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];name;active;cmsComponents(&componentRef)
+                         ;;CustomProductCarousel-page;customProductCarousel Slot for customCarosulePage;true;CustomProductCarouselComponent
+INSERT_UPDATE ContentSlotForPage;$contentCV[unique=true];uid[unique=true];position[unique=true];page(uid,$contentCV)[unique=true][default='carouselPage'];contentSlot(uid,$contentCV)[unique=true]
+                                ;;customProductCarousel;customCarousel;;CustomProductCarousel-page
+
+$contentCatalog=electronicsContentCatalog
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+INSERT_UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];name;masterTemplate(uid,$contentCV);label;defaultPage[default='true'];approvalStatus(code)[default='approved'];homepage[default='false']
+                         ;;carouselPage ;carouselProduct;manufacturerRegTemplate;/carouselPage

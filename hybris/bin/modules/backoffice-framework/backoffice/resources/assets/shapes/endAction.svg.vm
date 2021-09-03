@@ -1,0 +1,91 @@
+#* @vtlvariable name="model" type="de.hybris.platform.core.model.ItemModel" *#
+#* @vtlvariable name="class" type="java.lang.String" *#
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="200" height="100">
+	<style type="text/css">
+		div.node-container {
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+			width: 200px;
+			height: 100px;
+		}
+
+		div.node-container-text {
+			margin: 0 25px;
+			max-height: 60px;
+			width: 150px;
+			font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+			font-size: 24pt;
+			overflow: hidden;
+			word-break: normal;
+		}
+
+		.action-end-outer {
+			fill: #0486e0;
+		}
+
+		.action-end-middle {
+			fill: #fff;
+		}
+
+		.action-end-inner {
+			fill: #0486e0;
+		}
+
+		.action-end-text {
+			color: #ffffff;
+		}
+
+		.action-end-middle.selected {
+			fill: #D4E5FF;
+		}
+
+		.action-end-outer.terminated {
+			fill: #000;
+		}
+
+		.action-end-inner.terminated {
+			fill: #000;
+		}
+
+		.action-end-text.terminated {
+			color: #ff3b30;
+		}
+
+		.action-end-outer.completed {
+			fill: #000;
+		}
+
+		.action-end-inner.completed {
+			fill: #000;
+		}
+
+		.action-end-text.completed {
+			color: #5eb300;
+		}
+
+		.action-end-middle.in-progress {
+			fill: #0486E0;
+		}
+
+
+	</style>
+	<g>
+		<rect class="action-end-outer $class" ry="50%" width="200" height="100" y="0" x="0" fill="#0486E0"/>
+		<rect class="action-end-middle $class" ry="50%" width="192" height="92" y="4" x="4" fill="#fff"/>
+		<rect class="action-end-inner $class" ry="50%" width="165" height="72" y="14" x="17.5" fill="#0486E0"/>
+		<foreignObject x="0" y="0" width="100%" height="100%">
+			<div xmlns="http://www.w3.org/1999/xhtml" class="node-container">
+				<div class="node-container-text action-end-text $class">
+                    #if (!$model.getName() || "$model.getName()" == "")
+						<span>[$model.getCode()]</span>
+                    #else
+						<span>$model.getName()</span>
+                    #end
+				</div>
+			</div>
+		</foreignObject>
+	</g>
+</svg>

@@ -1,0 +1,23 @@
+$lang=en
+$catalog-id=testConfigureCatalog
+$catalog-version=Online
+$testCategory-id=CPQConfigurableCategory
+$catalogversion=catalogversion(catalog(id[default=$catalog-id]),version[default=$catalog-version])[unique=true,default=$catalog-id:$catalog-version]
+$supercategories=supercategories(code,catalogversion(catalog(id[default=$catalog-id]),version[default=$catalog-version]))
+$prices=europe1prices[translator=de.hybris.platform.europe1.jalo.impex.Europe1PricesTranslator]
+$approved=approvalstatus(code)[default='approved']
+
+
+#################################################################################
+# Products for Variants
+#################################################################################
+INSERT_UPDATE VariantAttributeDescriptor;qualifier[unique=true];attributeType(code);name[lang=en];generate;enclosingType(code)[unique=true];partOf;extensionName;search;readable;writable
+;product_name;java.lang.String;;true;MockVariantProduct;false;;false;true;true
+
+
+INSERT_UPDATE MockVariantProduct;code[unique=true];baseproduct(code,$catalogversion);$supercategories;manufacturerName;manufacturerAID;ean;variantType(code);unit(code)[default=PCE];$catalogversion;name[lang=$lang];description[lang=$lang];$prices;$approved;
+;CPQ_LAPTOP_HOME;CPQ_LAPTOP;$testCategory-id;SAP;;;;PCE;;Laptop Home;Laptop Home;1 PCE = 639 USD N;;
+;CPQ_LAPTOP_GAME;CPQ_LAPTOP;$testCategory-id;SAP;;;;PCE;;Laptop Game;Laptop Game;1 PCE = 1999 USD N;;
+;CPQ_LAPTOP_PROF;CPQ_LAPTOP;$testCategory-id;SAP;;;;PCE;;Laptop Professional;Laptop Professional;1 PCE = 939 USD N;;
+;CPQ_LAPTOP_MUSIC;CPQ_LAPTOP;$testCategory-id;SAP;;;;PCE;;Laptop Music;Laptop Music;1 PCE = 969 USD N,1 PCE = 800 EUR N;;
+;CPQ_LAPTOP_MUZAC;CPQ_LAPTOP;$testCategory-id;SAP;;;;PCE;;Laptop Music Edition ;Laptop Music Edition;1 PCE = 969 USD N,1 PCE = 800 EUR N;;
